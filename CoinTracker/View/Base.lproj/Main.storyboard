@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DS-DIGIB.TTF">
+            <string>DS-Digital-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-lx-vhH">
+                                <rect key="frame" x="150" y="69" width="93" height="32"/>
+                                <segments>
+                                    <segment title="PHP"/>
+                                    <segment title="USD"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemGreenColor"/>
+                                <connections>
+                                    <action selector="changeCurrency:" destination="BYZ-38-t0r" eventType="valueChanged" id="bsd-hF-on0"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Im4-3j-3pj">
+                                <rect key="frame" x="20" y="150" width="353" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOX-fX-hcJ">
+                                        <rect key="frame" x="10" y="0.0" width="333" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TP-cG-Bfp">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="Pvn-pw-moW"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="large"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="pressRefresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9T-UW-n9t"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN6-eN-I6F">
+                                                <rect key="frame" x="30" y="0.0" width="303" height="70"/>
+                                                <fontDescription key="fontDescription" name="DS-Digital-Bold" family="DS-Digital" pointSize="30"/>
+                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fOX-fX-hcJ" secondAttribute="bottom" id="8am-wW-0dg"/>
+                                    <constraint firstItem="fOX-fX-hcJ" firstAttribute="leading" secondItem="Im4-3j-3pj" secondAttribute="leading" constant="10" id="Gqx-Vi-UgG"/>
+                                    <constraint firstAttribute="height" constant="70" id="NQN-83-Bbn"/>
+                                    <constraint firstAttribute="trailing" secondItem="fOX-fX-hcJ" secondAttribute="trailing" constant="10" id="iT9-yR-KR7"/>
+                                    <constraint firstItem="fOX-fX-hcJ" firstAttribute="centerX" secondItem="Im4-3j-3pj" secondAttribute="centerX" id="jU9-9a-1AM"/>
+                                    <constraint firstItem="fOX-fX-hcJ" firstAttribute="top" secondItem="Im4-3j-3pj" secondAttribute="top" id="qbH-Fq-dha"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnD-IP-ZGj">
+                                <rect key="frame" x="0.0" y="582" width="393" height="216"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </pickerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KOJ-Zs-4kr">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinTracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftp-Vw-eOI">
+                                <rect key="frame" x="90.333333333333329" y="402" width="212.66666666666669" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="nnD-IP-ZGj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1ko-Us-A0X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nnD-IP-ZGj" secondAttribute="bottom" constant="20" id="3pc-bj-xEa"/>
+                            <constraint firstItem="2hC-lx-vhH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fk-1A-QYA"/>
+                            <constraint firstItem="ftp-Vw-eOI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bmq-KH-6MO"/>
+                            <constraint firstItem="2hC-lx-vhH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="IPM-fK-4j6"/>
+                            <constraint firstItem="Im4-3j-3pj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UYg-9e-L0w"/>
+                            <constraint firstItem="ftp-Vw-eOI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fbG-E5-PQQ"/>
+                            <constraint firstItem="KOJ-Zs-4kr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fmL-NV-bZb"/>
+                            <constraint firstItem="Im4-3j-3pj" firstAttribute="top" secondItem="2hC-lx-vhH" secondAttribute="bottom" constant="50" id="gHa-Pw-WUR"/>
+                            <constraint firstItem="KOJ-Zs-4kr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gnL-6O-HGh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Im4-3j-3pj" secondAttribute="trailing" constant="20" id="jiV-WS-H1K"/>
+                            <constraint firstItem="nnD-IP-ZGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qeH-Z9-uct"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appName" destination="ftp-Vw-eOI" id="jqW-D7-1zp"/>
+                        <outlet property="coinPicker" destination="nnD-IP-ZGj" id="SRV-Gv-ec5"/>
+                        <outlet property="currency" destination="2hC-lx-vhH" id="r8p-QT-2QK"/>
+                        <outlet property="loading" destination="KOJ-Zs-4kr" id="ILR-A2-Fh8"/>
+                        <outlet property="moneyDisplay" destination="iN6-eN-I6F" id="9MF-Y9-zme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

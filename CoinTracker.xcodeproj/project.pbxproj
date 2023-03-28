@@ -13,6 +13,16 @@
 		649400F029D30E0C00E82F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649400EE29D30E0C00E82F7A /* Main.storyboard */; };
 		649400F229D30E0E00E82F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649400F129D30E0E00E82F7A /* Assets.xcassets */; };
 		649400F529D30E0E00E82F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649400F329D30E0E00E82F7A /* LaunchScreen.storyboard */; };
+		6494010029D30E5A00E82F7A /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649400FF29D30E5A00E82F7A /* CoinManager.swift */; };
+		6494010229D30E6600E82F7A /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494010129D30E6600E82F7A /* CoinData.swift */; };
+		6494010529D3440100E82F7A /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494010429D3440100E82F7A /* CurrencyData.swift */; };
+		6494010D29D34A1F00E82F7A /* DS-DIGIT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6494010829D34A1E00E82F7A /* DS-DIGIT.TTF */; };
+		6494010E29D34A1F00E82F7A /* DS-DIGII.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6494010929D34A1F00E82F7A /* DS-DIGII.TTF */; };
+		6494010F29D34A1F00E82F7A /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6494010A29D34A1F00E82F7A /* DS-DIGI.TTF */; };
+		6494011029D34A1F00E82F7A /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 6494010B29D34A1F00E82F7A /* DS-DIGIB.TTF */; };
+		6494011329D3510400E82F7A /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6494011229D3510400E82F7A /* gif.gif */; };
+		6494011629D3510B00E82F7A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6494011429D3510B00E82F7A /* 2.png */; };
+		6494011729D3510B00E82F7A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6494011529D3510B00E82F7A /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,18 @@
 		649400F129D30E0E00E82F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		649400F429D30E0E00E82F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		649400F629D30E0E00E82F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		649400FF29D30E5A00E82F7A /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		6494010129D30E6600E82F7A /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		6494010329D33D6F00E82F7A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		6494010429D3440100E82F7A /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		6494010829D34A1E00E82F7A /* DS-DIGIT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIT.TTF"; sourceTree = "<group>"; };
+		6494010929D34A1F00E82F7A /* DS-DIGII.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGII.TTF"; sourceTree = "<group>"; };
+		6494010A29D34A1F00E82F7A /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
+		6494010B29D34A1F00E82F7A /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIB.TTF"; sourceTree = "<group>"; };
+		6494011229D3510400E82F7A /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		6494011429D3510B00E82F7A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		6494011529D3510B00E82F7A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		6494011829D3513400E82F7A /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +62,8 @@
 		649400DC29D30E0C00E82F7A = {
 			isa = PBXGroup;
 			children = (
+				6494011829D3513400E82F7A /* readme.md */,
+				6494011129D350E600E82F7A /* Documentation */,
 				649400E729D30E0C00E82F7A /* CoinTracker */,
 				649400E629D30E0C00E82F7A /* Products */,
 			);
@@ -56,15 +80,65 @@
 		649400E729D30E0C00E82F7A /* CoinTracker */ = {
 			isa = PBXGroup;
 			children = (
+				6494010629D34A1100E82F7A /* Fonts */,
+				649400FE29D30E3700E82F7A /* Controller */,
+				649400FD29D30E3300E82F7A /* View */,
+				649400FC29D30E2E00E82F7A /* Model */,
 				649400E829D30E0C00E82F7A /* AppDelegate.swift */,
 				649400EA29D30E0C00E82F7A /* SceneDelegate.swift */,
-				649400EC29D30E0C00E82F7A /* ViewController.swift */,
-				649400EE29D30E0C00E82F7A /* Main.storyboard */,
 				649400F129D30E0E00E82F7A /* Assets.xcassets */,
 				649400F329D30E0E00E82F7A /* LaunchScreen.storyboard */,
 				649400F629D30E0E00E82F7A /* Info.plist */,
+				6494010329D33D6F00E82F7A /* Config.xcconfig */,
 			);
 			path = CoinTracker;
+			sourceTree = "<group>";
+		};
+		649400FC29D30E2E00E82F7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				649400FF29D30E5A00E82F7A /* CoinManager.swift */,
+				6494010129D30E6600E82F7A /* CoinData.swift */,
+				6494010429D3440100E82F7A /* CurrencyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		649400FD29D30E3300E82F7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				649400EE29D30E0C00E82F7A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		649400FE29D30E3700E82F7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				649400EC29D30E0C00E82F7A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6494010629D34A1100E82F7A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6494010A29D34A1F00E82F7A /* DS-DIGI.TTF */,
+				6494010B29D34A1F00E82F7A /* DS-DIGIB.TTF */,
+				6494010929D34A1F00E82F7A /* DS-DIGII.TTF */,
+				6494010829D34A1E00E82F7A /* DS-DIGIT.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6494011129D350E600E82F7A /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				6494011529D3510B00E82F7A /* 1.png */,
+				6494011429D3510B00E82F7A /* 2.png */,
+				6494011229D3510400E82F7A /* gif.gif */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +199,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6494010D29D34A1F00E82F7A /* DS-DIGIT.TTF in Resources */,
+				6494011729D3510B00E82F7A /* 1.png in Resources */,
+				6494011329D3510400E82F7A /* gif.gif in Resources */,
+				6494011629D3510B00E82F7A /* 2.png in Resources */,
 				649400F529D30E0E00E82F7A /* LaunchScreen.storyboard in Resources */,
 				649400F229D30E0E00E82F7A /* Assets.xcassets in Resources */,
+				6494011029D34A1F00E82F7A /* DS-DIGIB.TTF in Resources */,
 				649400F029D30E0C00E82F7A /* Main.storyboard in Resources */,
+				6494010E29D34A1F00E82F7A /* DS-DIGII.TTF in Resources */,
+				6494010F29D34A1F00E82F7A /* DS-DIGI.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6494010529D3440100E82F7A /* CurrencyData.swift in Sources */,
+				6494010029D30E5A00E82F7A /* CoinManager.swift in Sources */,
 				649400ED29D30E0C00E82F7A /* ViewController.swift in Sources */,
+				6494010229D30E6600E82F7A /* CoinData.swift in Sources */,
 				649400E929D30E0C00E82F7A /* AppDelegate.swift in Sources */,
 				649400EB29D30E0C00E82F7A /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +366,7 @@
 		};
 		649400FA29D30E0E00E82F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6494010329D33D6F00E82F7A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +395,7 @@
 		};
 		649400FB29D30E0E00E82F7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6494010329D33D6F00E82F7A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
