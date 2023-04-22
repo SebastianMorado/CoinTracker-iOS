@@ -11,4 +11,4 @@ CoinTracker is an iOS app that brings user direct and updated information regard
 
 ## Additional Info
 
-This application is built on UIKit and the public ExchangeRate API and CoinCap API. ArcanaKeys is used to obfuscate api keys.
+This application is built on UIKit and the public ExchangeRate API and CoinCap API. [ArkanaKeys](https://github.com/rogerluan/arkana) is used to obfuscate api keys.
