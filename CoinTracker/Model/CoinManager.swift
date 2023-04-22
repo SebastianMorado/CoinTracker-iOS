@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ArkanaKeys
 
 protocol CoinManagerDelegate {
     func didUpdateValueCoin(value: [[String]])
@@ -15,7 +16,7 @@ protocol CoinManagerDelegate {
 
 class CoinManager {
     
-    let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
+    let apiKey = Keys.Global().aPI_KEY
     
     var delegate : CoinManagerDelegate?
 
@@ -42,7 +43,7 @@ class CoinManager {
     }
     
     func getCurrencyData() {
-        guard let apiKey = apiKey else {return}
+        
         if let url = URL(string: "https://v6.exchangerate-api.com/v6/\(apiKey)/pair/USD/PHP"){
             
             let session = URLSession(configuration: .default)

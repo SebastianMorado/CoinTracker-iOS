@@ -28,7 +28,5 @@
 		<string>DS-DIGII.TTF</string>
 		<string>DS-DIGIT.TTF</string>
 	</array>
-	<key>API_KEY</key>
-	<string>$(API_KEY)</string>
 </dict>
 </plist>

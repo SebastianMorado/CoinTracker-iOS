@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6430819D29F3DBB600E5F10F /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 6430819C29F3DBB600E5F10F /* ArkanaKeys */; };
 		649400E929D30E0C00E82F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649400E829D30E0C00E82F7A /* AppDelegate.swift */; };
 		649400EB29D30E0C00E82F7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649400EA29D30E0C00E82F7A /* SceneDelegate.swift */; };
 		649400ED29D30E0C00E82F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649400EC29D30E0C00E82F7A /* ViewController.swift */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6430819929F3DB6600E5F10F /* ArkanaKeys */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ArkanaKeys; path = dependencies/ArkanaKeys; sourceTree = "<group>"; };
+		6430819A29F3DBAC00E5F10F /* ArkanaKeysInterfaces */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ArkanaKeysInterfaces; path = dependencies/ArkanaKeysInterfaces; sourceTree = "<group>"; };
 		649400E529D30E0C00E82F7A /* CoinTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		649400E829D30E0C00E82F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		649400EA29D30E0C00E82F7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +39,6 @@
 		649400F629D30E0E00E82F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		649400FF29D30E5A00E82F7A /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		6494010129D30E6600E82F7A /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
-		6494010329D33D6F00E82F7A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		6494010429D3440100E82F7A /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
 		6494010829D34A1E00E82F7A /* DS-DIGIT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIT.TTF"; sourceTree = "<group>"; };
 		6494010929D34A1F00E82F7A /* DS-DIGII.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGII.TTF"; sourceTree = "<group>"; };
@@ -53,19 +55,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6430819D29F3DBB600E5F10F /* ArkanaKeys in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6430819729F3DA7C00E5F10F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6430819929F3DB6600E5F10F /* ArkanaKeys */,
+				6430819A29F3DBAC00E5F10F /* ArkanaKeysInterfaces */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		6430819B29F3DBB600E5F10F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		649400DC29D30E0C00E82F7A = {
 			isa = PBXGroup;
 			children = (
+				6430819729F3DA7C00E5F10F /* Packages */,
 				6494011829D3513400E82F7A /* readme.md */,
 				6494011129D350E600E82F7A /* Documentation */,
 				649400E729D30E0C00E82F7A /* CoinTracker */,
 				649400E629D30E0C00E82F7A /* Products */,
+				6430819B29F3DBB600E5F10F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +110,6 @@
 				649400F129D30E0E00E82F7A /* Assets.xcassets */,
 				649400F329D30E0E00E82F7A /* LaunchScreen.storyboard */,
 				649400F629D30E0E00E82F7A /* Info.plist */,
-				6494010329D33D6F00E82F7A /* Config.xcconfig */,
 			);
 			path = CoinTracker;
 			sourceTree = "<group>";
@@ -157,6 +177,9 @@
 			dependencies = (
 			);
 			name = CoinTracker;
+			packageProductDependencies = (
+				6430819C29F3DBB600E5F10F /* ArkanaKeys */,
+			);
 			productName = CoinTracker;
 			productReference = 649400E529D30E0C00E82F7A /* CoinTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -366,7 +389,6 @@
 		};
 		649400FA29D30E0E00E82F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6494010329D33D6F00E82F7A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,7 +417,6 @@
 		};
 		649400FB29D30E0E00E82F7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6494010329D33D6F00E82F7A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +465,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6430819C29F3DBB600E5F10F /* ArkanaKeys */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArkanaKeys;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 649400DD29D30E0C00E82F7A /* Project object */;
 }
